@@ -1,0 +1,38 @@
+window:
+  dimensions:
+    columns: 100
+    lines: 50
+
+  padding:
+    x: 15
+    y: 15
+  
+  decorations: Full
+
+  opacity: 0.9
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+  save_to_clipboard: true
+
+bell:
+  animation: EaseOutExpo
+  color: '0xffffff'
+  duration: 1
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+cursor:
+  # Cursor style
+  #
+  # Values for 'style':
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Underline
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
